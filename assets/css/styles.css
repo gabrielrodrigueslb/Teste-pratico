@@ -9,7 +9,7 @@
 }
 
 /* MAIN - Background azul */
-main {
+.main-banner {
     position: relative;
     width: 100%;
     height: 80vh; /* Ajuste conforme necessário */
@@ -17,9 +17,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-/* Fundo azul cobrindo toda a largura */
+    /* Fundo azul cobrindo toda a largura */
 .background {
     position: absolute;
     width: 100%;
@@ -52,7 +51,7 @@ main {
     padding: 80px;
     height: 100%; /* Ajuste conforme necessário */
     width: 100%;
-    max-width: 530px; /* Ajuste conforme necessário */
+    max-width: 430px; /* Ajuste conforme necessário */
     
 }
 
@@ -70,6 +69,12 @@ h1 {
     max-width: 400px; /* Ajuste conforme necessário */
     margin-bottom: 25px;
 }
+
+}
+
+
+
+
 
 p {
     font-size: 16px;

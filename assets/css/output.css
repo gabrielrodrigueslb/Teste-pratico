@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1rem;
+  color: #59595b;
+}
+
+.cntr-900 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cntr-750 {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* MAIN - Background azul */
+.main-banner {
+  position: relative;
+  width: 100%;
+  height: 110vh; /* Ajuste conforme necessário */
+  background-color: #daebf7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 890px;
+  overflow: hidden;
+  /* Fundo azul cobrindo toda a largura */
+  /* Imagem da casa ocupando toda a largura */
+  /* Bloco amarelo */
+  /* Logo dentro do bloco amarelo */
+  /* Texto do bloco amarelo */
+}
+.main-banner .background {
+  position: absolute;
+  width: 100%;
+  height: 110vh;
+  background-color: #daebf7;
+  top: 0;
+  left: 0;
+}
+.main-banner .house {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 110vh;
+  object-fit: cover;
+  object-position: top;
+  top: 0;
+  left: 0;
+}
+.main-banner .content {
+  position: absolute;
+  left: 19.2%;
+  top: 0;
+  background-image: url("../images/banner-decoration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 80px;
+  height: 90vh; /* Ajuste conforme necessário */
+  width: auto;
+  max-width: 430px; /* Ajuste conforme necessário */
+}
+.main-banner .logo {
+  width: 300px; /* Ajuste conforme necessário */
+  margin-bottom: 40px;
+}
+.main-banner h1 {
+  font-size: 48px;
+  color: #5595d1;
+  line-height: 1.18;
+  max-width: 400px; /* Ajuste conforme necessário */
+  margin-bottom: 25px;
+}
+
+.house-section {
+  background: #ffeb00;
+}
+.house-section .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block: 30px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.house-section p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.house-section .img-container {
+  width: 100%;
+  display: flex;
+  height: 350px;
+  background: #daebf7;
+  border-radius: 30px;
+  max-width: 350px;
+  margin: 0 auto;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  border: 2px solid #fff;
+}
+.house-section .img-container .house-alt {
+  width: 100%;
+  height: 100%;
+}
+.house-section .text {
+  display: flex;
+  max-width: 200px;
+}
+
+.video-section {
+  background: #5595d1;
+  padding-block: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.video-section .video {
+  width: 100%;
+  height: 430px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.video-section .text {
+  text-align: center;
+  max-width: 650px;
+  margin-bottom: 45px;
+  justify-self: center;
+}
+.video-section .text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffeb00;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.video-section .text p {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-block: 12px 8px;
+}
+.video-section .text span {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.video-section .text span img {
+  height: 20px;
+}
+.video-section .btn-contact {
+  background: #ffeb00;
+  display: inline-flex;
+  padding: 20px 180px;
+  align-items: center;
+  border-radius: 20px;
+  gap: 14px;
+  border: 2px solid #000;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.video-section .btn-contact img {
+  width: 20px;
+  height: auto;
+}
+
+.attention-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #ffeb00;
+}
+.attention-section .content {
+  max-width: 670px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 24px;
+}
+.attention-section .content img {
+  width: 45px;
+}
+.attention-section .content p {
+  color: #5595d1;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+  .main-banner {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ajuste conforme necessário */
+    background-color: #daebf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fundo azul cobrindo toda a largura */
+    /* Imagem da casa ocupando toda a largura */
+    /* Bloco amarelo */
+    /* Logo dentro do bloco amarelo */
+    /* Texto do bloco amarelo */
+  }
+  .main-banner .background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #daebf7;
+    top: 0;
+    left: 0;
+  }
+  .main-banner .house {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    top: 0;
+    left: 0;
+  }
+  .main-banner .content {
+    position: absolute;
+    left: 19.2%;
+    top: 0;
+    background-image: url("../images/banner-decoration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px;
+    height: 90vh; /* Ajuste conforme necessário */
+    width: auto;
+    max-width: 400px; /* Ajuste conforme necessário */
+  }
+  .main-banner .logo {
+    width: 180px; /* Ajuste conforme necessário */
+    margin-bottom: 40px;
+  }
+  .main-banner h1 {
+    font-size: 38px;
+    color: #5595d1;
+    line-height: 1.18;
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin-bottom: 25px;
+  }
+  .main-banner p {
+    font-size: 14px;
+    color: #59595b;
+  }
+}
+.house-section {
+  display: flex;
+  background: #ffeb00;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=output.css.map */
