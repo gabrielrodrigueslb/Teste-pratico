@@ -36,7 +36,8 @@ p {
 }
 .main-banner .container {
   padding-inline: 25px;
-  max-width: 1440px;
+  max-width: 940px;
+  margin: 0 auto;
   width: 100%;
 }
 .main-banner .content {
@@ -45,6 +46,7 @@ p {
   background: #ffeb00;
   border-radius: 0% 0% 10px 20px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  max-height: 90vh;
 }
 .main-banner .logo {
   width: 13.75rem;
@@ -173,6 +175,18 @@ p {
   line-height: 1.5rem;
 }
 
+@media (max-width: 1370px) {
+  .main-banner .content .logo {
+    width: 190px;
+    margin-bottom: 30px;
+  }
+  .main-banner h1 {
+    font-size: 2.3rem;
+  }
+  .main-banner p {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 950px) {
   .house-section {
     padding: 5.625rem;
@@ -293,33 +307,6 @@ p {
   }
 }
 @media (max-width: 510px) {
-  .main-banner {
-    height: 90vh;
-    min-height: auto;
-  }
-  .main-banner .background {
-    height: 90vh;
-  }
-  .main-banner .house {
-    height: 50rem;
-  }
-  .main-banner .content {
-    margin: 0 auto;
-    padding: 3rem !important;
-    max-width: 22rem;
-    min-width: 400px;
-    left: 7%;
-  }
-  .main-banner .logo {
-    width: 11rem;
-    margin-bottom: 1.6rem;
-  }
-  .main-banner h1 {
-    font-size: 2rem;
-  }
-  .main-banner p {
-    font-size: 0.8rem;
-  }
   .house-section {
     padding: 3.625rem;
     display: flex;

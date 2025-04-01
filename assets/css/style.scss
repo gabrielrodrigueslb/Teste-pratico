@@ -41,7 +41,8 @@ p {
 
   .container{
       padding-inline: 25px;
-      max-width: 1440px;
+      max-width: 940px;
+      margin: 0 auto;
       width: 100%;
 
   }
@@ -52,6 +53,7 @@ p {
       background: #ffeb00;
       border-radius: 0% 0% 10px 20px;
       clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+      max-height: 90vh;
   }
 
   .logo {
@@ -195,6 +197,23 @@ p {
       color: $blue-color;
       font-weight: 600;
       line-height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width:1370px) {
+  .main-banner{
+    .content{
+      .logo{
+        width: 190px;
+        margin-bottom: 30px;
+      }
+    }
+    h1{
+      font-size: 2.3rem;
+    }
+    p{
+      font-size: .9rem;
     }
   }
 }
@@ -351,34 +370,7 @@ p {
 }
 
 @media (max-width: 510px) {
-  .main-banner {
-    height: 90vh;
-    min-height: auto;
-
-    .background {
-      height: 90vh;
-    }
-    .house {
-      height: 50rem;
-    }
-    .content {
-      margin: 0 auto;
-      padding: 3rem !important;
-      max-width: 22rem;
-      min-width: 400px;
-      left: 7%;
-    }
-    .logo {
-      width: 11rem;
-      margin-bottom: 1.6rem;
-    }
-    h1 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-  }
+  
   .house-section {
     padding: 3.625rem;
     display: flex;
